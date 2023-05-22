@@ -1,0 +1,50 @@
+{
+  "name": "get-intro",
+  "displayName": "Get Intro",
+  "version": "0.0.1",
+  "description": "Get intros for twitter accounts",
+  "author": "amaan",
+  "homepage": "https://twitter.com/amaan_eth",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "^0.3.0",
+    "framer-motion": "^10.12.12",
+    "plasmo": "0.72.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "twitter-api-sdk": "^1.2.1",
+    "twitter-api-v2": "^1.14.2"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.4",
+    "@types/chrome": "0.0.236",
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "^10.4.14",
+    "dotenv": "^16.0.3",
+    "postcss": "8.4.23",
+    "prettier": "2.8.8",
+    "tailwindcss": "3.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "5.0.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "tabs",
+      "contextMenus",
+      "storage",
+      "activeTab",
+      "identity",
+      "scripting"
+    ]
+  }
+}
