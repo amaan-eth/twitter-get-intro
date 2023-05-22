@@ -19,7 +19,7 @@ If you view a profile that's followed by 100 ppl you follow vs 1 person you foll
 7. Run `pnpm install` to install dependencies
 8. Run `pnpm run build` to compile the project
 9. Go to chrome://extensions & turn on developer mode
-10. Click "Load Unpacked". Select this repo and find the `build` folder. There should be a `chrome-mv3-prod folder`. Select that.
+10. Click "Load Unpacked". Select this repo and find the `build` folder. There should be a `chrome-mv3-prod` folder. Select that.
 11. Enjoy!
 
 ## How I Built This
