@@ -41,12 +41,14 @@ const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
   let targetUserFollowing;
 
   // Request for all My Followers
+  const myUid = await client.users.findUserByUsername(myUserId);
   try {
-    myFollowers = await fetchAllUsers("usersIdFollowers", myUserId, {
+    myFollowers = await fetchAllUsers("usersIdFollowers", myUid, {
       max_results: 1000,
       "user.fields": ["profile_image_url", "description"]
     });
   } catch (err) {
+    console.error(err);
     res.send({ status: "error" });
   }
 
