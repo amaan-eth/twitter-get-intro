@@ -52,7 +52,7 @@ const GetIntroButton = () => {
     setIsModalVisible(true);
     setIsModalLoading(true);
     const res = await sendToBackground({
-      name: "grabToken",
+      name: "grabUsers",
       body: { currentPageUrl: window.location.href }
     });
     setReqStatus(res.status);
